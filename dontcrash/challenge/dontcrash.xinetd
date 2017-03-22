@@ -1,0 +1,13 @@
+service dontcrash
+{
+    protocol       = tcp
+    disable        = no
+    port           = 5667
+    flags          = REUSE
+    socket_type    = stream
+    wait           = no
+    user           = ctf
+    server         = /usr/bin/timeout
+    server_args    = 10 /home/ctf/dontcrash
+    type           = UNLISTED
+}

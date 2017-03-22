@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: seteax
+  labels:
+    app: seteax
+spec:
+  type: LoadBalancer
+  ports:
+      - port: 5252
+        targetPort: 5252
+  selector:
+    app: seteax
