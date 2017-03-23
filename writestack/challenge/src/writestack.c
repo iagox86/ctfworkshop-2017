@@ -14,14 +14,16 @@ int main(int argc, char *argv[])
 {
   uint8_t *buffer = mmap(NULL, LENGTH, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_ANONYMOUS | MAP_PRIVATE, 0, 0);
   ssize_t len;
-  char flag[] = FLAG;
+  int guard1 = 0x41414141;
+  int target = 0;
+  int guard2 = 0x42424242;
 
   alarm(10);
 
   disable_buffering(stdout);
   disable_buffering(stderr);
 
-  printf("Send me stuff!! Your goal: read the flag off the stack\n");
+  printf("Send me stuff!! Your goal: change target (on the stack) to 1 without damaging guard1 or guard2\n");
   len = read(0, buffer, LENGTH);
 
   if(len < 0) {
@@ -29,7 +31,26 @@ int main(int argc, char *argv[])
     exit(1);
   }
 
-  asm("jmp *%0\n" : :"r"(buffer));
+  printf("a\n");
+  asm("call *%0\n" : :"r"(buffer));
+  printf("b\n");
+
+  if(guard1 != 0x41414141) {
+    printf("Damaged guard1!\n");
+    exit(0);
+  }
+
+  if(guard2 != 0x42424242) {
+    printf("Damaged guard2!\n");
+    exit(0);
+  }
+
+  if(target != 1) {
+    printf("Change target to 1!\n");
+    exit(0);
+  }
+
+  printf("FLAG: %s\n", FLAG);
 
   return 0;
 }
