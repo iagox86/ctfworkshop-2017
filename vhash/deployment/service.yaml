@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vhash
+  name: vhash-service
   annotations:
     service.beta.kubernetes.io/external-traffic: "OnlyLocal"
   labels:

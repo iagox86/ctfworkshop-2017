@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: readmem
+  name: readmem-service
   labels:
     app: readmem
 spec:
