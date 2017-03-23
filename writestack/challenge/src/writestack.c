@@ -31,9 +31,7 @@ int main(int argc, char *argv[])
     exit(1);
   }
 
-  printf("a\n");
   asm("call *%0\n" : :"r"(buffer));
-  printf("b\n");
 
   if(guard1 != 0x41414141) {
     printf("Damaged guard1!\n");
