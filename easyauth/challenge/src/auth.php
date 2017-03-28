@@ -1,8 +1,8 @@
 <?php
-  define('FLAG', 'FLAG:0076ecde2daae415d7e5ccc7db909e7e');
+  define('FLAG', 'FLAG:314499024ca35fa77155dec25b1509e6');
 
   $accts = array(
-    'administrator' => 'bmLhVHjius',
+    'administrator' => 'bmLhrHjius',
     'guest' => 'guest',
   );
 

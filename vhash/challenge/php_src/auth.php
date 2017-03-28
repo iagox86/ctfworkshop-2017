@@ -1,6 +1,6 @@
 <?php
-  define('SECRET', '25fab666');
-  define('FLAG', 'FLAG:06c211f73f4f5ba198c7fb56145b39a2');
+  define('SECRET', '25fab66r');
+  define('FLAG', 'FLAG:cdc0357731d10aa24cbf634db1823749');
 
   $accts = array(
     'administrator' => 'bmLhVHjius',

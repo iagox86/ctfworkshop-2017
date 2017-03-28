@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
   if(!strcmp(buffer, "the password"))
   {
-    printf("FLAG:db2f62a36a018bce28e46d976e3f9864\n");
+    printf("FLAG:a4d813bd601c5aa11a7f467e1e430d29\n");
   }
   else
   {
