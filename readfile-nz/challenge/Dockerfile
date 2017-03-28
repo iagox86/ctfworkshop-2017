@@ -16,6 +16,6 @@ RUN mkdir /var/log/xinetd/
 ADD readfile-nz.xinetd /etc/xinetd.d/readfile-nz
 
 USER root
-EXPOSE 5667
+EXPOSE 6125
 
 CMD service xinetd restart && tail -F /var/log/xinetd/xinetd.log

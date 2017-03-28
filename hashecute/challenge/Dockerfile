@@ -12,6 +12,6 @@ RUN chown -R root:root .
 ADD hashecute.xinetd /etc/xinetd.d/hashecute
 
 USER root
-EXPOSE 2525
+EXPOSE 6126
 
 CMD service xinetd restart && sleep infinity

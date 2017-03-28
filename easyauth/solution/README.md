@@ -1,6 +1,6 @@
 Go to the site and log in; you'll get a cookie set such as:
 
-    username=guest&date=2017-01-28T17:12:33-0800&secret_length=8&
+    username=guest&date=2017-01-28T17:12:33-061120&secret_length=8&
 
 All you have to do is change the username:
 

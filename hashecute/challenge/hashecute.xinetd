@@ -2,7 +2,7 @@ service hashecute
 {
     protocol       = tcp
     disable        = no
-    port           = 2525
+    port           = 6126
     flags          = REUSE
     socket_type    = stream
     wait           = no

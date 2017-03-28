@@ -7,8 +7,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-      - port: 5757
-        targetPort: 5757
+      - port: 6128
+        targetPort: 6128
   selector:
     # This should match the app name above
     app: b-64-b-tuff

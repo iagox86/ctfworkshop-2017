@@ -16,7 +16,7 @@ spec:
         image: gcr.io/bsides-sf-ctf-2017/shortest
         ports:
           # This is the port that the container exposes
-          - containerPort: 8890
+          - containerPort: 6127
         volumeMounts:
           - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
             name: no-api-access-please

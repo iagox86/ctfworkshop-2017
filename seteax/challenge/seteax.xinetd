@@ -2,7 +2,7 @@ service seteax
 {
     protocol       = tcp
     disable        = no
-    port           = 5668
+    port           = 6114
     flags          = REUSE
     socket_type    = stream
     wait           = no

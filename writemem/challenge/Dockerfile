@@ -16,6 +16,6 @@ RUN mkdir /var/log/xinetd/
 ADD writemem.xinetd /etc/xinetd.d/writemem
 
 USER root
-EXPOSE 5667
+EXPOSE 6118
 
 CMD service xinetd restart && tail -F /var/log/xinetd/xinetd.log

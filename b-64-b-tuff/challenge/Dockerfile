@@ -17,6 +17,6 @@ RUN mkdir /var/log/xinetd/
 
 
 USER root
-EXPOSE 5757
+EXPOSE 6128
 
 CMD service xinetd restart && tail -F /var/log/xinetd/xinetd.log

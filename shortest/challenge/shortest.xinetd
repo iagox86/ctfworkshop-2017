@@ -2,7 +2,7 @@ service shortest
 {
     protocol       = tcp
     disable        = no
-    port           = 8890
+    port           = 6127
     flags          = REUSE
     socket_type    = stream
     wait           = no

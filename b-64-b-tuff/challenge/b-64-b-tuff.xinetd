@@ -2,7 +2,7 @@ service b-64-b-tuff
 {
     protocol       = tcp
     disable        = no
-    port           = 5757
+    port           = 6128
     flags          = REUSE
     socket_type    = stream
     wait           = no

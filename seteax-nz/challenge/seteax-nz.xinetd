@@ -2,7 +2,7 @@ service seteax-nz
 {
     protocol       = tcp
     disable        = no
-    port           = 5668
+    port           = 6115
     flags          = REUSE
     socket_type    = stream
     wait           = no

@@ -16,6 +16,6 @@ RUN mkdir /var/log/xinetd/
 ADD writestack-nz.xinetd /etc/xinetd.d/writestack-nz
 
 USER root
-EXPOSE 5667
+EXPOSE 6123
 
 CMD service xinetd restart && tail -F /var/log/xinetd/xinetd.log

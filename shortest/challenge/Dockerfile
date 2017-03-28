@@ -11,6 +11,6 @@ RUN chown -R root:root .
 
 ADD shortest.xinetd /etc/xinetd.d/shortest
 
-EXPOSE 8890
+EXPOSE 6127
 
 CMD service xinetd restart && sleep infinity

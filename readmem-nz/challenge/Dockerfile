@@ -16,6 +16,6 @@ RUN mkdir /var/log/xinetd/
 ADD readmem-nz.xinetd /etc/xinetd.d/readmem-nz
 
 USER root
-EXPOSE 5667
+EXPOSE 6117
 
 CMD service xinetd restart && tail -F /var/log/xinetd/xinetd.log

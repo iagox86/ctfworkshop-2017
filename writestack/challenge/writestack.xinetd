@@ -2,7 +2,7 @@ service writestack
 {
     protocol       = tcp
     disable        = no
-    port           = 5667
+    port           = 6122
     flags          = REUSE
     socket_type    = stream
     wait           = no

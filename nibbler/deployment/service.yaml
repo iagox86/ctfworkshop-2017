@@ -7,7 +7,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-      - port: 1338
-        targetPort: 1338
+      - port: 6130
+        targetPort: 6130
   selector:
     app: nibbler

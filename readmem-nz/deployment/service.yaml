@@ -7,7 +7,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-      - port: 5252
-        targetPort: 5252
+      - port: 6117
+        targetPort: 6117
   selector:
     app: readmem-nz

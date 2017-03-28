@@ -2,7 +2,7 @@ service readstack
 {
     protocol       = tcp
     disable        = no
-    port           = 5667
+    port           = 6120
     flags          = REUSE
     socket_type    = stream
     wait           = no

@@ -7,7 +7,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-      - port: 5252
-        targetPort: 5252
+      - port: 6114
+        targetPort: 6114
   selector:
     app: seteax

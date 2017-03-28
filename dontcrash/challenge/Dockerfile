@@ -16,6 +16,6 @@ RUN mkdir /var/log/xinetd/
 ADD dontcrash.xinetd /etc/xinetd.d/dontcrash
 
 USER root
-EXPOSE 5667
+EXPOSE 6113
 
 CMD service xinetd restart && tail -F /var/log/xinetd/xinetd.log

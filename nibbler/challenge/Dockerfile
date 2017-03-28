@@ -12,6 +12,6 @@ RUN chown -R root:root .
 ADD nibbler.xinetd /etc/xinetd.d/nibbler
 
 USER root
-EXPOSE 1338
+EXPOSE 6130
 
 CMD service xinetd restart && sleep infinity

@@ -16,6 +16,6 @@ RUN mkdir /var/log/xinetd/
 ADD seteax-nz.xinetd /etc/xinetd.d/seteax-nz
 
 USER root
-EXPOSE 5668
+EXPOSE 6115
 
 CMD service xinetd restart && tail -F /var/log/xinetd/xinetd.log

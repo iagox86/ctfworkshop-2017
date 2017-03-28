@@ -7,8 +7,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-      - port: 8890
-        targetPort: 8890
+      - port: 6127
+        targetPort: 6127
   selector:
     # This should match the app name above
     app: shortest

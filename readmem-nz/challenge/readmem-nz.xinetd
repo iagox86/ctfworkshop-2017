@@ -2,7 +2,7 @@ service readmem-nz
 {
     protocol       = tcp
     disable        = no
-    port           = 5667
+    port           = 6117
     flags          = REUSE
     socket_type    = stream
     wait           = no

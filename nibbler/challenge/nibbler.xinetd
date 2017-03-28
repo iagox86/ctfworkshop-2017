@@ -2,7 +2,7 @@ service nibbler
 {
     protocol       = tcp
     disable        = no
-    port           = 1338
+    port           = 6130
     flags          = REUSE
     socket_type    = stream
     wait           = no

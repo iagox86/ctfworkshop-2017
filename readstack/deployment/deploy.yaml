@@ -16,7 +16,7 @@ spec:
         image: gcr.io/bsides-sf-ctf-2017/readstack
         ports:
           # This is the port that the container exposes
-          - containerPort: 5252
+          - containerPort: 6120
         volumeMounts:
           - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
             name: no-api-access-please

@@ -16,7 +16,7 @@ spec:
         image: gcr.io/bsides-sf-ctf-2017/hashecute
         ports:
           # This is the port that the container exposes
-          - containerPort: 2525
+          - containerPort: 6126
         volumeMounts:
           - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
             name: no-api-access-please

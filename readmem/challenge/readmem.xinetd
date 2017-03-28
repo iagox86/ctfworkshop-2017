@@ -2,7 +2,7 @@ service readmem
 {
     protocol       = tcp
     disable        = no
-    port           = 5667
+    port           = 6116
     flags          = REUSE
     socket_type    = stream
     wait           = no

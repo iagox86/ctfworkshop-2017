@@ -7,7 +7,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-      - port: 2525
-        targetPort: 2525
+      - port: 6126
+        targetPort: 6126
   selector:
     app: hashecute

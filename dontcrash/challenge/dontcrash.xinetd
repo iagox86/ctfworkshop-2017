@@ -2,7 +2,7 @@ service dontcrash
 {
     protocol       = tcp
     disable        = no
-    port           = 5667
+    port           = 6113
     flags          = REUSE
     socket_type    = stream
     wait           = no
