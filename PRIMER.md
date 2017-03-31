@@ -51,6 +51,26 @@ When you compile with `nasm`, you don't have any of that. All you have is the ra
 
 Shellcode doesn't need (and can't have) any of that extra information.
 
+### Endianness
+
+Endianness is something that's kinda hard to wrap your head around, but you're going to have to fairly early on in this workshop.
+
+Human-readable values can be 1, 2, 4, or 8 bytes (typically). The way those are represented in memory are their "endianness". Endianness refers to whethre the first byte of the number is first, or if the firs byte is last.
+
+For example, let's think of the number 0x1122. It's two bytes long - one byte is 0x11, and the other byte is 0x22.
+
+On a **big endian** system, which is uncommon, that would be stored in memory as `11 22`. If you look at the memory before and after, you might see `00 00 00 00 00 11 22 00 00`.
+
+On a **little endian** system, which is more common (i386, for example, is little endian), the bytes are stored with the least significant first - ie, 0x11223344 would be stored `44 33 22 11` in memory. That's what you'll pretty much always see, so you'll just have to get used to it.
+
+If it helps, the reason is to make truncation easier. If you want to take the uint32 value 0x11223344, and cast it to a uint16, you'd expect it to be 0x3344. If you truncate 0x11223344 to a single byte, you'd expect it to be the last one - 0x44. When the value is stored as `44 33 22 11`, and you truncate it to a byte, the address doesn't change.
+
+### ASLR
+
+ASLR stands for Address Space Layout Randomization. It's a feature in most modern operating systems that makes exploitation harder. It means that memory addresses (for the stack, etc) change on every execution.
+
+That means that challenges in this workshop that have an address will change every time you run it - you can't hardcode memory addresses!
+
 ### Self modification
 
 Because shellcode is self contained, it can modify itself! Commonly, this is to get around character restrictions. If you need shellcode that's fully alpha-numeric, for example, you can't do a syscall (`int 0x80` => `\xcd\x80`). Therefore, you have to encode the syscall as two values that match the constraints, then xor them together (fortunately `xor eax, 0x41414141` => `"\x35\x41\x41\x41\x41"` => `"5AAAA"`).
