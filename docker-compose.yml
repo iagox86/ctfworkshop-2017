@@ -1,0 +1,97 @@
+# Our problems. You can easily test these by running:
+# `docker-compose build && docker-compose up -d`
+
+easyauth:
+  build: easyauth/challenge
+  ports:
+    - 6112:6112
+
+dontcrash:
+  build: dontcrash/challenge
+  ports:
+    - 6113:6113
+
+seteax:
+  build: seteax/challenge
+  ports:
+    - 6114:6114
+
+seteax-nz:
+  build: seteax-nz/challenge
+  ports:
+    - 6115:6115
+
+readmem:
+  build: readmem/challenge
+  ports:
+    - 6116:6116
+
+readmem-nz:
+  build: readmem-nz/challenge
+  ports:
+    - 6117:6117
+
+writemem:
+  build: writemem/challenge
+  ports:
+    - 6118:6118
+
+writemem-nz:
+  build: writemem-nz/challenge
+  ports:
+    - 6119:6119
+
+readstack:
+  build: readstack/challenge
+  ports:
+    - 6120:6120
+
+readstack-nz:
+  build: readstack-nz/challenge
+  ports:
+    - 6121:6121
+
+writestack:
+  build: writestack/challenge
+  ports:
+    - 6122:6122
+
+writestack-nz:
+  build: writestack-nz/challenge
+  ports:
+    - 6123:6123
+
+readfile:
+  build: readfile/challenge
+  ports:
+    - 6124:6124
+
+readfile-nz:
+  build: readfile-nz/challenge
+  ports:
+    - 6125:6125
+
+hashecute:
+  build: hashecute/challenge
+  ports:
+    - 6126:6126
+
+shortest:
+  build: shortest/challenge
+  ports:
+    - 6127:6127
+
+b-64-b-tuff:
+  build: b-64-b-tuff/challenge
+  ports:
+    - 6128:6128
+
+vhash:
+  build: vhash/challenge
+  ports:
+    - 6129:6129
+
+nibbler:
+  build: nibbler/challenge
+  ports:
+    - 6130:6130
