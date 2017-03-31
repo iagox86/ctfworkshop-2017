@@ -9,7 +9,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-      - port: 6129
-        targetPort: 6129
+      - port: 80
+        targetPort: 80
   selector:
     app: vhash

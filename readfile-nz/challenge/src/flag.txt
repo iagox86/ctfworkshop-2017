@@ -1,1 +1,1 @@
-#define FLAG "520bb974b0d9d28690b7ad84ce9b700e"
+520bb974b0d9d28690b7ad84ce9b700e

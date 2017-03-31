@@ -4,7 +4,7 @@
 easyauth:
   build: easyauth/challenge
   ports:
-    - 6112:6112
+    - 6112:80
 
 dontcrash:
   build: dontcrash/challenge
@@ -89,7 +89,7 @@ b-64-b-tuff:
 vhash:
   build: vhash/challenge
   ports:
-    - 6129:6129
+    - 6129:80
 
 nibbler:
   build: nibbler/challenge
